@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className='sm:hidden flex items-center justify-center text-2xl cursor-pointer' onClick={() => setMenu(!menu)}>
             {menu?<RxCross1/> : <GiHamburgerMenu />}
             </div>
-            <div className={`sm:hidden bg-slate-300 w-full absolute top-14 left-0 py-5 px-2 rounded-br-lg flex flex-col gap-2 ${!menu&&'hidden'}`}>
+            <div className={`sm:hidden bg-slate-300 w-full absolute top-14 left-0 py-5 px-2 rounded-br-lg rounded-bl-lg flex flex-col gap-2 ${!menu&&'hidden'}`}>
                 <a href='#' className='text-lg font-medium hover:text-blue-400 hover:bg-slate-200 py-1 px-2'>Home</a>
                 <a href='#' className='text-lg font-medium hover:text-blue-400 hover:bg-slate-200 py-1 px-2'>Find</a>
                 <a href='#' className='text-lg font-medium hover:text-blue-400 hover:bg-slate-200 py-1 px-2'>Contact Us</a>
